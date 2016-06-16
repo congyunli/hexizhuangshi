@@ -1,8 +1,8 @@
 <?php return array (
-  'name' => '傲雪世界',
+  'name' => '和玺装饰',
   'author' => '新时代研发团队',
-  'dirname' => 'allsure',
-  'homepage' => 'http://www.cgassist.com/',
+  'dirname' => 'hexi',
+  'homepage' => 'http://www.dlhexi.com/',
   'version' => '1.0',
   'disable' => 0,
   'file_explan' => 

@@ -2,12 +2,12 @@
 
 return array (
 	'default' => array (
-		'hostname' => 'qdm157977655.my3w.com',
+		'hostname' => '192.168.33.10',
 		'port' => 3306,
-		'database' => 'qdm157977655_db',
-		'username' => 'qdm157977655',
-		'password' => 'a3x8k6f5m9',
-		'tablepre' => 'as_',
+		'database' => 'hexi',
+		'username' => 'root',
+		'password' => 'root',
+		'tablepre' => 'hx_',
 		'charset' => 'utf8',
 		'type' => 'mysql',
 		'debug' => true,

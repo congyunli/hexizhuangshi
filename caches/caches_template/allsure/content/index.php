@@ -70,10 +70,10 @@
                         <ul class="poster-list">
                             <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
 
-                                <?php 
+                                <?php
                                 // echo "<pre>";
                                 // var_dump($r[catid]);continue;
-                                    $pics = string2array($r['pictureurls']); 
+                                    $pics = string2array($r['pictureurls']);
                                     if($r[catid] == "17" || $r[catid] == "18"){
                                         $work_type = "pic";
                                     }else{
@@ -82,9 +82,9 @@
                                 ?>
                                 <li class="poster-item">
                                     <a href="/index.php?m=content&c=index&a=lists&catid=8&work_type=<?php echo $work_type;?>"><img src="<?php echo thumb($pics[0][url],427,427);?>" alt="<?php echo $r['title'];?>" width="100%" height="100%"></a>
-                                </li>  
+                                </li>
                             <?php $n++;}unset($n); ?>
-                                              
+
                         </ul>
                     <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     <div class="poster-btn poster-next-btn"></div>
