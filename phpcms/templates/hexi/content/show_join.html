@@ -1,4 +1,4 @@
-<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("common","header"); ?>
+{template "common","header"}
 	<section class="container-width about">
 		<div class="join-box">
 			<div class="container">
@@ -16,12 +16,12 @@
 					</h2>
 					<div class="ctner-line">	
 						<span></span>
-						<p><img src="<?php echo APP_PATH;?>statics/allsure/images/logoo.png" alt=""></p>
+						<p><img src="{APP_PATH}statics/allsure/images/logoo.png" alt=""></p>
 					</div>
 					<p class="contact-mail">www.cgassist.com</p>
 
 					<article class="main-cet" style="margin-top: 170px;">
-						<?php echo $content;?>
+						{$content}
 					</article>
 
 				</div>

@@ -1,0 +1,11 @@
+
+<p class="tabs">
+  {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+          {loop $data $r}
+            <a href="{$r[url]}">
+                {$r[catname]}
+                <em></em>
+            </a>
+          {/loop}
+  {/pc}
+</p>

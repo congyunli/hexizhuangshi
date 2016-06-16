@@ -16,7 +16,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => '',
-    'url' => 'http://www.cgassist.com/',
+    'url' => 'http://www.dlhexi.com/',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -53,7 +53,7 @@ return array (
     'parentdir' => 'image_works/',
     'catdir' => 'yxpt',
     'url' => 'http://www.cgassist.com/index.php?m=content&c=index&a=lists&catid=15',
-    'items' => '1',
+    'items' => '2',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',
@@ -103,7 +103,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => '',
-    'url' => 'http://www.cgassist.com/index.php?m=content&c=index&a=show&catid=11&id=4',
+    'url' => 'http://www.dlhexi.com/index.php?m=content&c=index&a=show&catid=11&id=4',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -139,7 +139,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => '',
-    'url' => 'http://www.cgassist.com/index.php?m=content&c=index&a=show&catid=11&id=2',
+    'url' => 'http://www.dlhexi.com/index.php?m=content&c=index&a=show&catid=11&id=2',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -176,7 +176,7 @@ return array (
     'parentdir' => 'image_works/',
     'catdir' => 'ysdh',
     'url' => 'http://www.cgassist.com/index.php?m=content&c=index&a=lists&catid=16',
-    'items' => '1',
+    'items' => '2',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',
@@ -227,7 +227,7 @@ return array (
     'parentdir' => 'image_works/',
     'catdir' => 'xchb',
     'url' => 'http://www.cgassist.com/index.php?m=content&c=index&a=lists&catid=17',
-    'items' => '1',
+    'items' => '7',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',
@@ -329,7 +329,7 @@ return array (
     'parentdir' => 'image_works/',
     'catdir' => 'otherCG',
     'url' => 'http://www.cgassist.com/index.php?m=content&c=index&a=lists&catid=18',
-    'items' => '2',
+    'items' => '9',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',
@@ -379,7 +379,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => '',
-    'url' => 'http://www.cgassist.com/index.php?m=content&c=index&a=show&catid=11&id=3',
+    'url' => 'http://www.dlhexi.com/index.php?m=content&c=index&a=show&catid=11&id=3',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
