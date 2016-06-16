@@ -4,11 +4,14 @@
           {loop $data $r}
             <li>
                 <a href="{$r[url]}">{$r[catname]}</a>
-                <ul class="ssubNav">
-                    {loop subcat($r['catid']) $r2}
-                        <li><a href="{$r2['url']}">{$r2['catname']}</a></li>
-                    {/loop}
-                </ul>
+                {if subcat($r['catid'],0,0,1) != ''}
+
+                    <ul class="ssubNav">
+                        {loop subcat($r['catid']) $r2}
+                            <li><a href="{$r2['url']}">{$r2['catname']}</a></li>
+                        {/loop}
+                    </ul>
+                {/if}
             </li>
           {/loop}
   {/pc}
