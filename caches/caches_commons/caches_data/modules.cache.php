@@ -364,5 +364,19 @@ return array (
     'installdate' => '2012-09-28',
     'updatedate' => '2012-09-28',
   ),
+  'poster' => 
+  array (
+    'module' => 'poster',
+    'name' => '广告模块',
+    'url' => 'poster/',
+    'iscore' => '0',
+    'version' => '1.0',
+    'description' => '广告模块',
+    'setting' => '',
+    'listorder' => '0',
+    'disabled' => '0',
+    'installdate' => '2016-06-16',
+    'updatedate' => '2016-06-16',
+  ),
 );
 ?>

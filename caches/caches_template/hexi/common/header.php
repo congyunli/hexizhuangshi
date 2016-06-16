@@ -2,60 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta property="qc:admins" content="23406061474621616137636" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <title><?php if(isset($SEO['title']) && !empty($SEO['title'])) { ?><?php echo $SEO['title'];?><?php } ?><?php echo $SEO['site_title'];?></title>
     <meta name="keywords" content="<?php echo $SEO['keyword'];?>">
     <meta name="description" content="<?php echo $SEO['description'];?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo APP_PATH;?>statics/allsure/css/carousel.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo APP_PATH;?>statics/allsure/libs/fancybox/fancybox.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo APP_PATH;?>statics/allsure/css/style.css">
-    <link rel="shortcut icon" href="<?php echo APP_PATH;?>bitbug_favicon.ico" />
-    <!-- QQ客服CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php echo APP_PATH;?>statics/allsure/qq_kefu/css/lrtk.css" />
-
-    <!--[if lt IE 9]> 
-        <script type="text/javascript" src="<?php echo APP_PATH;?>statics/allsure/js/html5.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="<?php echo APP_PATH;?>statics/allsure/js/jquery.js"></script>
-    <script type="text/javascript" src="<?php echo APP_PATH;?>statics/allsure/js/carousel.js"></script>
-    <script type="text/javascript" src="<?php echo APP_PATH;?>statics/allsure/js/base.js"></script>
-    <script type="text/javascript" src="<?php echo APP_PATH;?>statics/allsure/libs/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            Carousel.init($(".J_Poster"));
-        });
-    </script>
-    <!-- QQ客服JS -->
-    <script type="text/javascript" src="<?php echo APP_PATH;?>statics/allsure/qq_kefu/js/lrtk.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="<?php echo APP_PATH;?>statics/hexi/plugins/flexslider/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo APP_PATH;?>statics/hexi/css/base.css">
 </head>
-
 <body>
-<!-- QQ客服 -->
-<div id="top"></div>
+<div class="container">
+    <div class="header">
+        <h1 class="logo">和玺装饰</h1>
+        <div class="contact fr">
+            <div class="left">
+                <i class="i-phone"></i>
+            </div>
+            <div class="right">
+                <span class="label">24小时装修咨询热线</span><br/>
+                <span class="n-phone">0411-84586967</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navigator">
+    <div class="container">
+        <?php include template("common","nav"); ?>
 
-
-    <section class="container-width">
-
-        <nav>
-
-            <a href="/">
-
-                <img src="<?php echo APP_PATH;?>statics/allsure/images/logo.png" width="190" alt="">
-<!-- 
-                <h1>
-
-                  <img class="titleIMG" src="<?php echo APP_PATH;?>statics/allsure/images/allsure.png">
-
-                  A L L S U R E
-
-                </h1>
- -->
-            </a>
-
-
-
-            <?php include template("common","nav"); ?>
-
-        </nav>
-
-    </section>
+    </div>
+</div>
