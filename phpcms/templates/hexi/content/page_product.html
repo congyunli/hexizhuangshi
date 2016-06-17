@@ -38,16 +38,11 @@
 
 <div class="container colums mgt30 clearfix">
     <div class="left">
-        <ul class="left-labels">
-            <li class="title"><i class="i-link i-title2"></i></li>
-            <li><a href=""><i class="i-link w-shimu"></i></a></li>
-            <li><a href=""><i class="i-link w-gongzhuang"></i></a></li>
-            <li><a href=""><i class="i-link w-siren"></i></a></li>
-        </ul>
+        {template "common","nav_left"}
     </div>
     <div class="right">
         <div class="case-txt pdb45">
-            <img src="{APP_PATH}statics/hexi/images/demo/demo4.jpg" alt="" />
+            {$content}
         </div>
     </div>
 </div>

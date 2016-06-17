@@ -2,7 +2,7 @@
 
 return array (
 	'default' => array (
-		'hostname' => '192.168.33.10',
+		'hostname' => '127.0.0.1',
 		'port' => 3306,
 		'database' => 'hexi',
 		'username' => 'root',

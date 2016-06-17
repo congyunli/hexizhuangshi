@@ -38,20 +38,11 @@
 
 <div class="container colums mgt30 clearfix">
     <div class="left">
-        <ul class="left-labels">
-            <li class="title"><i class="i-link i-title2"></i></li>
-            <li><a href=""><i class="i-link w-shimu"></i></a></li>
-            <li><a href=""><i class="i-link w-gongzhuang"></i></a></li>
-            <li><a href=""><i class="i-link w-siren"></i></a></li>
-        </ul>
+        <?php include template("common","nav_left"); ?>
     </div>
     <div class="right">
         <div class="case-txt pdb45">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At asperiores enim, libero quia, amet ipsum aperiam cumque sed ullam, natus, adipisci eveniet voluptas nam in voluptates odit provident ipsam mollitia!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur soluta eius ad, quas voluptas tempore optio quam debitis nam maxime blanditiis delectus dicta quae? Quibusdam accusantium eos ad architecto vero.
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsa! Perferendis earum, officiis! Aspernatur exercitationem assumenda iste suscipit est tempora cumque nemo. Ad delectus dolore dolorum minima itaque quas quidem?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsa! Perferendis earum, officiis! Aspernatur exercitationem assumenda iste suscipit est tempora cumque nemo. Ad delectus dolore dolorum minima itaque quas quidem?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsa! Perferendis earum, officiis! Aspernatur exercitationem assumenda iste suscipit est tempora cumque nemo. Ad delectus dolore dolorum minima itaque quas quidem?</p>
+            <?php echo $content;?>
         </div>
     </div>
 </div>

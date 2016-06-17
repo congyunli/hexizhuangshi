@@ -4,33 +4,49 @@
     <div class="banner colums case clearfix">
         <div class="left">
             <div class="inner-ctner">
-                <h2>亿达·春田留庄别墅</h2>
+            <?php if($_GET['id'] != ''){ $id = intval($_GET['id']); ?>
+
+                {pc:get sql="SELECT * FROM hx_picture as a left join hx_picture_data as b on a.id=b.id WHERE a.catid='$catid' and a.id='$id'"  return="data"}
+                    <h2>{$data[0]['title']}</h2>
+                {/pc} 
+
+            <?php }else{ ?>
+
+                {pc:content action="lists" catid="$catid" num="1" order="listorder DESC" moreinfo="1" page="$page"}      
+                    {loop $data $n $r} 
+                        <h2>{$r['title']}</h2>
+                    {/loop} 
+                {/pc} 
+
+            <?php } ?>
             </div>
         </div>
         <div class="right">
             <div id="banner" class="flexslider">
                 <ul class="slides">
-                    <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
-                    </li>
-                    <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
-                    </li>
-                    <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
-                    </li>
-                    <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
-                    </li>
-                    <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
-                    </li>
-                    <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
-                    </li>
-                    <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
-                    </li>
+                    <?php if($_GET['id'] != ''){ $id = intval($_GET['id']); ?>
+                        {pc:get sql="SELECT * FROM hx_picture as a left join hx_picture_data as b on a.id=b.id WHERE a.catid='$catid' and a.id='$id'"  return="data"}
+                            {loop $data $n $r} 
+                                {loop string2array($r['pictureurls']) $k $v} 
+                                    <li>
+                                        <img src="{thumb($v[url],175,120)}"  alt="{$v[alt]}"/>
+                                    </li>
+                                {/loop} 
+                            {/loop}
+
+                        {/pc} 
+
+                    <?php }else{ ?>
+                        {pc:content action="lists" catid="$catid" num="1" order="listorder DESC" moreinfo="1" page="$page"}      
+                            {loop $data $n $r} 
+                                {loop string2array($r['pictureurls']) $k $v} 
+                                    <li>
+                                        <img src="{thumb($v[url],175,120)}"  alt="{$v[alt]}"/>
+                                    </li>
+                                {/loop} 
+                            {/loop} 
+                        {/pc} 
+                    <?php } ?>
                 </ul>
             </div>
         </div>
@@ -39,63 +55,27 @@
 
 <div class="container colums mgt30 clearfix">
     <div class="left">
-        <ul class="left-labels">
-            <li class="title"><i class="i-link i-title2"></i></li>
-            <li><a href=""><i class="i-link w-shimu"></i></a></li>
-            <li><a href=""><i class="i-link w-gongzhuang"></i></a></li>
-            <li><a href=""><i class="i-link w-siren"></i></a></li>
-        </ul>
+        {template "common","nav_left"}
     </div>
     <div class="right">
         <ul class="case-list clearfix pdb45">
-            <li class="ctner">
-                <i class="i-link shimu"></i>
-                <a href="">
-                    <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
-                    </div>
-                </a>
-            </li>
-            <li class="ctner">
-                <i class="i-link gongzhuang"></i>
-                <a href="">
-                    <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
-                    </div>
-                </a>
-            </li>
-            <li class="ctner">
-                <i class="i-link siren"></i>
-                <a href="">
-                    <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
-                    </div>
-                </a>
-            </li>
-            <li class="ctner">
-                <i class="i-link shimu"></i>
-                <a href="">
-                    <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
-                    </div>
-                </a>
-            </li>
-            <li class="ctner">
-                <i class="i-link gongzhuang"></i>
-                <a href="">
-                    <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
-                    </div>
-                </a>
-            </li>
-            <li class="ctner">
-                <i class="i-link siren"></i>
-                <a href="">
-                    <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
-                    </div>
-                </a>
-            </li>
+
+            {pc:content action="lists" catid="$catid" num="100" order="listorder DESC" moreinfo="1" }
+                {loop $data $n $r}
+
+                    {php $pictureurls = string2array($r['pictureurls']);}
+                        <li class="ctner">
+                            <i class="i-link shimu">{$r[title]}</i>
+                            <a href="/index.php?m=content&c=index&a=lists&catid={$catid}&id={$r[id]}">
+                                <div class="img-frame">
+                                    <img src="{thumb($pictureurls[0]['url'],175,120)}" alt="{$pictureurls[0]['alt']}" />
+                                </div>
+                            </a>
+                        </li>
+                {/loop} 
+                
+            {/pc} 
+            
         </ul>
     </div>
 </div>

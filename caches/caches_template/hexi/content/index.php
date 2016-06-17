@@ -23,26 +23,32 @@
         <ul class="list-show clearfix">
             <li>
                 <h2>
-                    <a href=""><i class="i-link shimu"></i></a>
+                    <a href="/index.php?m=content&c=index&a=lists&catid=15"><i class="i-link shimu"></i></a>
                 </h2>
                 <div class="imgframe mgt12">
-                    <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo1.jpg" alt="" />
+                    <a href="/index.php?m=content&c=index&a=lists&catid=15">
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo1.jpg" alt="" />
+                    </a>
                 </div>
             </li>
             <li>
                 <h2>
-                    <a href=""><i class="i-link gongzhuang"></i></a>
+                    <a href="/index.php?m=content&c=index&a=lists&catid=16"><i class="i-link gongzhuang"></i></a>
                 </h2>
                 <div class="imgframe mgt12">
-                    <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo1.jpg" alt="" />
+                    <a href="/index.php?m=content&c=index&a=lists&catid=16">
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo1.jpg" alt="" />
+                    </a>
                 </div>
             </li>
             <li>
                 <h2>
-                    <a href=""><i class="i-link siren"></i></a>
+                    <a href="/index.php?m=content&c=index&a=lists&catid=17"><i class="i-link siren"></i></a>
                 </h2>
                 <div class="imgframe mgt12">
-                    <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo1.jpg" alt="" />
+                    <a href="/index.php?m=content&c=index&a=lists&catid=17">
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo1.jpg" alt="" />
+                    </a>
                 </div>
             </li>
         </ul>
@@ -61,7 +67,7 @@
                 <p>让您装修放心，住得安心！</p>
             </dd>
             <dd class="mgt70">
-                <a href="" class="more">最新工程案例 →</a>
+                <a href="/index.php?m=content&c=index&a=lists&catid=15" class="more">最新工程案例 →</a>
             </dd>
         </dl>
     </div>

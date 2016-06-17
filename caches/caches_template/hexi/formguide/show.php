@@ -24,6 +24,10 @@
 	</form>
 </div>
 
+
+
+
+
 <?php include template("common","footer"); ?>
 </body>
 </html>
