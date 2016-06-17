@@ -1,4 +1,4 @@
-{template "common","header"}
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("common","header"); ?>
 
 <div class="container">
     <div class="banner colums case clearfix">
@@ -11,25 +11,25 @@
             <div id="banner" class="flexslider">
                 <ul class="slides">
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                 </ul>
             </div>
@@ -52,7 +52,7 @@
                 <i class="i-link shimu"></i>
                 <a href="">
                     <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo3.jpg" alt="" />
                     </div>
                 </a>
             </li>
@@ -60,7 +60,7 @@
                 <i class="i-link gongzhuang"></i>
                 <a href="">
                     <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo3.jpg" alt="" />
                     </div>
                 </a>
             </li>
@@ -68,7 +68,7 @@
                 <i class="i-link siren"></i>
                 <a href="">
                     <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo3.jpg" alt="" />
                     </div>
                 </a>
             </li>
@@ -76,7 +76,7 @@
                 <i class="i-link shimu"></i>
                 <a href="">
                     <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo3.jpg" alt="" />
                     </div>
                 </a>
             </li>
@@ -84,7 +84,7 @@
                 <i class="i-link gongzhuang"></i>
                 <a href="">
                     <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo3.jpg" alt="" />
                     </div>
                 </a>
             </li>
@@ -92,7 +92,7 @@
                 <i class="i-link siren"></i>
                 <a href="">
                     <div class="img-frame">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo3.jpg" alt="" />
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo3.jpg" alt="" />
                     </div>
                 </a>
             </li>
@@ -100,7 +100,7 @@
     </div>
 </div>
 
-{template "common","footer"}
+<?php include template("common","footer"); ?>
 
 <script type="text/javascript">
     $(function(){

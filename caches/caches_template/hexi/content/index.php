@@ -68,3 +68,17 @@
 <!--main end-->
 
 <?php include template("common","footer"); ?>
+
+<script type="text/javascript">
+    $(function(){
+        $('#banner').flexslider({
+            animation: "slide",     //动画效果
+            directionNav: false,    //显示方向箭头？false
+            slideshow: true,      //多张开启自动滚动
+            slideshowSpeed: 3000,
+            animationSpeed: 400
+        });
+    });
+</script>
+</body>
+</html>

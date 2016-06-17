@@ -1,4 +1,4 @@
-{template "common","header"}
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("common","header"); ?>
 <div class="container">
     <div class="banner colums case clearfix">
         <div class="left">
@@ -10,25 +10,25 @@
             <div id="banner" class="flexslider">
                 <ul class="slides">
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                 </ul>
             </div>
@@ -56,7 +56,7 @@
     </div>
 </div>
 
-{template "common","footer"}
+<?php include template("common","footer"); ?>
 
 <script type="text/javascript">
     $(function(){

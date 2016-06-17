@@ -1,4 +1,4 @@
-{template "common","header"}
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("common","header"); ?>
 <div class="container">
     <div class="banner colums cus-list">
     </div>
@@ -29,6 +29,6 @@
     </div>
 </div>
 
-{template "common","footer"}
+<?php include template("common","footer"); ?>
 </body>
 </html>

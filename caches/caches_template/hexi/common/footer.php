@@ -27,16 +27,4 @@
 
     <script type="text/javascript" src="<?php echo APP_PATH;?>statics/hexi/plugins/jquery/jquery-2.2.1.min.js"></script>
     <script type="text/javascript" src="<?php echo APP_PATH;?>statics/hexi/plugins/flexslider/jquery.flexslider-min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            $('#banner').flexslider({
-                animation: "slide",     //动画效果
-                directionNav: false,    //显示方向箭头？false
-                slideshow: true,      //多张开启自动滚动
-                slideshowSpeed: 3000,
-                animationSpeed: 400
-            });
-        });
-    </script>
-    </body>
-    </html>
+    <script type="text/javascript" src="<?php echo APP_PATH;?>statics/hexi/js/nav.js"></script>

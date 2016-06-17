@@ -1,4 +1,4 @@
-{template "common","header"}
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("common","header"); ?>
 <div class="container">
     <div class="banner colums case clearfix">
         <div class="left">
@@ -10,25 +10,25 @@
             <div id="banner" class="flexslider">
                 <ul class="slides">
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                     <li>
-                        <img src="{APP_PATH}statics/hexi/images/demo/banner2.jpg"/>
+                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner2.jpg"/>
                     </li>
                 </ul>
             </div>
@@ -47,16 +47,12 @@
     </div>
     <div class="right">
         <div class="case-txt pdb45">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At asperiores enim, libero quia, amet ipsum aperiam cumque sed ullam, natus, adipisci eveniet voluptas nam in voluptates odit provident ipsam mollitia!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur soluta eius ad, quas voluptas tempore optio quam debitis nam maxime blanditiis delectus dicta quae? Quibusdam accusantium eos ad architecto vero.
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsa! Perferendis earum, officiis! Aspernatur exercitationem assumenda iste suscipit est tempora cumque nemo. Ad delectus dolore dolorum minima itaque quas quidem?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsa! Perferendis earum, officiis! Aspernatur exercitationem assumenda iste suscipit est tempora cumque nemo. Ad delectus dolore dolorum minima itaque quas quidem?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsa! Perferendis earum, officiis! Aspernatur exercitationem assumenda iste suscipit est tempora cumque nemo. Ad delectus dolore dolorum minima itaque quas quidem?</p>
+            <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo4.jpg" alt="" />
         </div>
     </div>
 </div>
 
-{template "common","footer"}
+<?php include template("common","footer"); ?>
 
 <script type="text/javascript">
     $(function(){

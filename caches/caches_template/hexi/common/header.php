@@ -28,6 +28,5 @@
 <div class="navigator">
     <div class="container">
         <?php include template("common","nav"); ?>
-
     </div>
 </div>
