@@ -5,21 +5,15 @@
         <div class="banner">
             <div id="banner" class="flexslider">
                 <ul class="slides">
-                    <li>
-                        <a href="">
-                            <img src="{APP_PATH}statics/hexi/images/demo/banner.jpg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="{APP_PATH}statics/hexi/images/demo/banner.jpg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="{APP_PATH}statics/hexi/images/demo/banner.jpg"/>
-                        </a>
-                    </li>
+                    <!--幻灯片-->
+                    {pc:slider action="lists" postion="56" siteid="$siteid" order="desc" num="10"}
+                    {loop $data $r}
+                        <li>
+                            <a href="{$r[url]}">
+                                <img src="{$r[image]}" alt="{$r[name]}"/>
+                            </a>
+                        </li>
+                    {/loop}
                 </ul>
             </div>
         </div>

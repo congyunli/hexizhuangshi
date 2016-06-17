@@ -364,19 +364,19 @@ return array (
     'installdate' => '2012-09-28',
     'updatedate' => '2012-09-28',
   ),
-  'poster' => 
+  'slider' => 
   array (
-    'module' => 'poster',
-    'name' => '广告模块',
-    'url' => 'poster/',
+    'module' => 'slider',
+    'name' => '幻灯片管理',
+    'url' => '',
     'iscore' => '0',
     'version' => '1.0',
-    'description' => '广告模块',
+    'description' => '',
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2016-06-16',
-    'updatedate' => '2016-06-16',
+    'installdate' => '2013-12-25',
+    'updatedate' => '2013-12-25',
   ),
 );
 ?>

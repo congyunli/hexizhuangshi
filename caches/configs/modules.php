@@ -4,5 +4,6 @@ return array (
   'special' => '专题',
   'content' => '内容模块',
   'link' => '友情链接',
+  'slider' => '幻灯片管理',
 );
 ?>

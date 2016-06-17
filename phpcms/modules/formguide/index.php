@@ -51,7 +51,6 @@ class index {
 		if (isset($_POST['dosubmit'])) {
 			$tablename = 'form_'.$r['tablename'];
 			$this->m_db->change_table($tablename);
-			
 			$data = array();
 			require CACHE_MODEL_PATH.'formguide_input.class.php';
 			$formguide_input = new formguide_input($formid);
@@ -75,6 +74,7 @@ class index {
 				}
 				$this->db->update(array('items'=>'+=1'), array('modelid'=>$formid, 'siteid'=>$this->siteid));
 			}
+
 			showmessage(L('thanks'), APP_PATH);
 		} else {
 			if ($setting['allowunreg']==0 && !$userid && $_GET['action']=='js') {
@@ -94,7 +94,7 @@ class index {
 			if (($setting['allowmultisubmit']==0 && $re['datetime']) || ((SYS_TIME-$re['datetime'])<$this->M['interval']*60)) {
 				$_GET['action'] ? exit : showmessage(L('had_participate'), APP_PATH.'index.php?m=formguide&c=index&a=index');
 			}
-			
+
 			require CACHE_MODEL_PATH.'formguide_form.class.php';
 			$formguide_form = new formguide_form($formid, $no_allowed);
 			$forminfos_data = $formguide_form->get();

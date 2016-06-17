@@ -454,4 +454,10 @@ $LANG['complete_info'] = '填写资料';
 $LANG['clear_data'] = '一键清理';
 $LANG['player_manage'] = '播放器管理';
 $LANG['video_upload'] = '视频上传'; 
+$LANG['slider'] = '幻灯片管理';
+$LANG['add_slider'] = '添加幻灯片';
+$LANG['edit_slider'] = '编辑幻灯片';
+$LANG['delete_slider'] = '删除幻灯片';
+$LANG['add_postion'] = '添加幻灯片位置';
+$LANG['list_postion'] = '幻灯片位置管理';
 ?>

@@ -46,6 +46,7 @@ class formguide_input {
 			} elseif($maxlength) {
 				$value = str_cut($value,$maxlength,'');
 			}
+
 			if($pattern && $length && !preg_match($pattern, $value) && !$isimport) showmessage($errortips);
 			$func = $field['formtype'];
 			if(method_exists($this, $func)) $value = $this->$func($field['field'], $value);
@@ -54,6 +55,7 @@ class formguide_input {
 			if ($_POST['style_color']) $info['style'] = $_POST['style_color'];
 			if($_POST['style_font_weight']) $info['style'] = $info['style'].';'.strip_tags($_POST['style_font_weight']);
 		}
+
 		return $info;
 	}
 	function textarea($field, $value) {

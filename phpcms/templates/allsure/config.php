@@ -4,7 +4,7 @@
   'dirname' => 'hexi',
   'homepage' => 'http://www.dlhexi.com/',
   'version' => '1.0',
-  'disable' => 0,
+  'disable' => 1,
   'file_explan' => 
   array (
     'templates|allsure|content' => 

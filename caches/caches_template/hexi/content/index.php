@@ -5,21 +5,15 @@
         <div class="banner">
             <div id="banner" class="flexslider">
                 <ul class="slides">
-                    <li>
-                        <a href="">
-                            <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner.jpg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner.jpg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/banner.jpg"/>
-                        </a>
-                    </li>
+                    <!--幻灯片-->
+                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"slider\" data=\"op=slider&tag_md5=ed0c260e1d25306ab98fa85b2f5fe425&action=lists&postion=56&siteid=%24siteid&order=desc&num=10\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$slider_tag = pc_base::load_app_class("slider_tag", "slider");if (method_exists($slider_tag, 'lists')) {$data = $slider_tag->lists(array('postion'=>'56','siteid'=>$siteid,'order'=>'desc','limit'=>'10',));}?>
+                    <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                        <li>
+                            <a href="<?php echo $r['url'];?>">
+                                <img src="<?php echo $r['image'];?>" alt="<?php echo $r['name'];?>"/>
+                            </a>
+                        </li>
+                    <?php $n++;}unset($n); ?>
                 </ul>
             </div>
         </div>
