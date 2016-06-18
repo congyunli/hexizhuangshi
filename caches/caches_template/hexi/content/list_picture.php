@@ -65,8 +65,8 @@
 
                     <?php $pictureurls = string2array($r['pictureurls']);?>
                         <li class="ctner">
-                            <i class="i-link shimu"><?php echo $r['title'];?></i>
                             <a href="/index.php?m=content&c=index&a=lists&catid=<?php echo $catid;?>&id=<?php echo $r['id'];?>">
+                                <h3><?php echo $r['title'];?></h3>
                                 <div class="img-frame">
                                     <img src="<?php echo thumb($pictureurls[0]['url'],175,120);?>" alt="<?php echo $pictureurls['0']['alt'];?>" />
                                 </div>
@@ -83,33 +83,38 @@
 <?php include template("common","footer"); ?>
 
 <script type="text/javascript">
-    $(function(){
-        $('#banner').flexslider({
-            animation: "fade",     //动画效果
-            directionNav: false,    //显示方向箭头？false
-            slideshow: true,      //多张开启自动滚动
-            slideshowSpeed: 3000,
-            animationSpeed: 400,
-            manualControlEvent: 'hover',
-            start: function(obj){
-                var $sliders = obj.find('li'),
-                        exist = $sliders.length/2;
-                var $pager = $('.flex-control-nav', obj);
-                for(var i=0; i<exist; i++){
-                    console.log($('li:eq('+i+') img', obj).attr('src'));
-                    var src=$('li:eq('+i+') img', obj).attr('src');
-                    $('li>a', $pager).css({
-                        'background-image': 'url('+src+')',
-                        'background-repeat': 'no-repeat',
-                        'background-size': '100% auto'
-                    });
-                    $('li>a', $pager).on('mouseenter', function(){
-                        $(this).click();
-                    });
+        $(function(){
+            $('#banner').flexslider({
+                animation: "fade",     //动画效果
+                directionNav: false,    //显示方向箭头？false
+                slideshow: true,      //多张开启自动滚动
+                slideshowSpeed: 3000,
+                animationSpeed: 400,
+                manualControlEvent: 'hover',
+                start: function(obj){
+                    var $sliders = obj.find('li'),
+                    exist = $sliders.length/2;
+                    if(exist<1){
+                        $('div', {
+                            className: 'flex-control-nav flex-control-paging'
+                        }).appendTo(obj);
+                        $('.flex-control-nav', obj).html('<li><a href="#" class="flex-active"></a></li>');
+                    }
+                    var $pager = $('.flex-control-nav', obj);
+                    for(var i=0; i<exist; i++){
+                        var src=$('li:eq('+i+') img', obj).attr('src');
+                        $('li>a:eq('+i+')', $pager).css({
+                            'background-image': 'url('+src+')',
+                            'background-repeat': 'no-repeat',
+                            'background-size': '100% auto'
+                        });
+                        $('li>a', $pager).on('mouseenter', function(){
+                            $(this).click();
+                        });
+                    }
                 }
-            }
+             });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
