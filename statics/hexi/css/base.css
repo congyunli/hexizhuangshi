@@ -278,6 +278,7 @@ a.main-c:hover{ color: #F7D679; }
 .left-labels{ width: 230px; margin-left: auto; margin-right: auto; position: relative; top: -68px; }
 .left-labels li{ margin-bottom: 10px; background-color: #a16a52; color: #fff; height: 50px; line-height: 50px; text-align: center; }
 .left-labels li a{ display: block; }
+.left-labels li a:hover{ background-color: #0d499c; }
 .left-labels .title{ height: 32px; padding-top: 38px; padding-bottom: 30px; }
 
 .case-txt{ color: #B2A9A8; font-size: 16px; line-height: 1.5em;}
@@ -292,7 +293,7 @@ a.main-c:hover{ color: #F7D679; }
 
 
 .banner.case .flex-control-nav{ bottom: auto; top: 160px; left: -310px; width: 285px; text-align: left; }
-.banner.case .flex-control-paging li a{ width: 80px; height: 55px; border-radius: 0; margin-bottom: 10px; border: 1px solid transparent; }
+.banner.case .flex-control-paging li a{ width: 80px; height: 55px; border-radius: 0; margin-bottom: 10px; border: 1px solid transparent; -webkit-background-size: 100% 100%!important; background-size: 100% 100%!important; }
 .banner.case .flex-control-paging li a.flex-active{ border-color: #fff; background: transparent; }
 
 .banner.recruit{ background: url(../images/zhaopin.jpg) no-repeat left top; }
