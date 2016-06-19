@@ -18,7 +18,7 @@
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                             <li>
                                 <a href="<?php echo $r['url'];?>">
-                                    <img src="<?php echo $r['image'];?>" alt="<?php echo $r['name'];?>"/>
+                                    <img src="<?php echo $r['image'];?>" width="642" height="490"  alt="<?php echo $r['name'];?>"/>
                                 </a>
                             </li>
                         <?php $n++;}unset($n); ?>

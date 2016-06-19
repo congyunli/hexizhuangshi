@@ -26,9 +26,17 @@
                     <a href="/index.php?m=content&c=index&a=lists&catid=15"><i class="i-link shimu"></i></a>
                 </h2>
                 <div class="imgframe mgt12">
-                    <a href="/index.php?m=content&c=index&a=lists&catid=15">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo1.jpg" alt="" />
-                    </a>
+                    {pc:content action="lists" catid="15" num="1" order="listorder DESC" moreinfo="1" page="$page"}      
+                        {loop $data $n $r} 
+                            {loop string2array($r['pictureurls']) $k $v} 
+                                <a href="/index.php?m=content&c=index&a=lists&catid=15">
+                                    <img src="{$v[url]}" width="316" height="177"  alt="{$v[alt]}"/>
+                                </a>
+                                {php break}
+                            {/loop} 
+                            {php break}
+                        {/loop} 
+                    {/pc} 
                 </div>
             </li>
             <li>
@@ -36,9 +44,17 @@
                     <a href="/index.php?m=content&c=index&a=lists&catid=16"><i class="i-link gongzhuang"></i></a>
                 </h2>
                 <div class="imgframe mgt12">
-                    <a href="/index.php?m=content&c=index&a=lists&catid=16">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo1.jpg" alt="" />
-                    </a>
+                    {pc:content action="lists" catid="16" num="1" order="listorder DESC" moreinfo="1" page="$page"}      
+                        {loop $data $n $r} 
+                            {loop string2array($r['pictureurls']) $k $v} 
+                                <a href="/index.php?m=content&c=index&a=lists&catid=16">
+                                    <img src="{$v[url]}" width="316" height="177"  alt="{$v[alt]}"/>
+                                </a>
+                                {php break}
+                            {/loop} 
+                            {php break}
+                        {/loop} 
+                    {/pc} 
                 </div>
             </li>
             <li>
@@ -46,9 +62,17 @@
                     <a href="/index.php?m=content&c=index&a=lists&catid=17"><i class="i-link siren"></i></a>
                 </h2>
                 <div class="imgframe mgt12">
-                    <a href="/index.php?m=content&c=index&a=lists&catid=17">
-                        <img src="{APP_PATH}statics/hexi/images/demo/demo1.jpg" alt="" />
-                    </a>
+                    {pc:content action="lists" catid="17" num="1" order="listorder DESC" moreinfo="1" page="$page"}      
+                        {loop $data $n $r} 
+                            {loop string2array($r['pictureurls']) $k $v} 
+                                <a href="/index.php?m=content&c=index&a=lists&catid=17">
+                                    <img src="{$v[url]}" width="316" height="177"  alt="{$v[alt]}"/>
+                                </a>
+                                {php break}
+                            {/loop} 
+                            {php break}
+                        {/loop} 
+                    {/pc} 
                 </div>
             </li>
         </ul>
@@ -77,14 +101,16 @@
 
 <script type="text/javascript">
     $(function(){
-        $('#banner').flexslider({
-            animation: "slide",     //动画效果
-            directionNav: false,    //显示方向箭头？false
-            slideshow: true,      //多张开启自动滚动
-            slideshowSpeed: 3000,
-            animationSpeed: 400
+            $('#banner').flexslider({
+                animation: "slide",     //动画效果
+                directionNav: true,    //显示方向箭头？false
+                slideshow: true,      //多张开启自动滚动
+                slideshowSpeed: 3000,
+                animationSpeed: 400,
+                prevText: '',
+                nextText: ''
+             });
         });
-    });
 </script>
 </body>
 </html>

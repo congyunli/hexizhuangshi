@@ -29,7 +29,7 @@
                             <?php $n=1; if(is_array($data)) foreach($data AS $n => $r) { ?> 
                                 <?php $n=1; if(is_array(string2array($r['pictureurls']))) foreach(string2array($r['pictureurls']) AS $k => $v) { ?> 
                                     <li>
-                                        <img src="<?php echo thumb($v[url],175,120);?>"  alt="<?php echo $v['alt'];?>"/>
+                                        <img src="<?php echo $v['url'];?>" width="642" height="490"  alt="<?php echo $v['alt'];?>"/>
                                     </li>
                                 <?php $n++;}unset($n); ?> 
                             <?php $n++;}unset($n); ?>
@@ -41,7 +41,7 @@
                             <?php $n=1; if(is_array($data)) foreach($data AS $n => $r) { ?> 
                                 <?php $n=1; if(is_array(string2array($r['pictureurls']))) foreach(string2array($r['pictureurls']) AS $k => $v) { ?> 
                                     <li>
-                                        <img src="<?php echo thumb($v[url],175,120);?>"  alt="<?php echo $v['alt'];?>"/>
+                                        <img src="<?php echo $v['url'];?>" width="642" height="490"  alt="<?php echo $v['alt'];?>"/>
                                     </li>
                                 <?php $n++;}unset($n); ?> 
                             <?php $n++;}unset($n); ?> 
@@ -68,7 +68,7 @@
                             <a href="/index.php?m=content&c=index&a=lists&catid=<?php echo $catid;?>&id=<?php echo $r['id'];?>">
                                 <h3><?php echo $r['title'];?></h3>
                                 <div class="img-frame">
-                                    <img src="<?php echo thumb($pictureurls[0]['url'],175,120);?>" alt="<?php echo $pictureurls['0']['alt'];?>" />
+                                    <img src="<?php echo $pictureurls['0']['url'];?>"  width="203" height="114" alt="<?php echo $pictureurls['0']['alt'];?>" />
                                 </div>
                             </a>
                         </li>

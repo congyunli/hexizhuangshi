@@ -29,7 +29,7 @@
                             {loop $data $n $r} 
                                 {loop string2array($r['pictureurls']) $k $v} 
                                     <li>
-                                        <img src="{thumb($v[url],175,120)}"  alt="{$v[alt]}"/>
+                                        <img src="{$v[url]}" width="642" height="490"  alt="{$v[alt]}"/>
                                     </li>
                                 {/loop} 
                             {/loop}
@@ -41,7 +41,7 @@
                             {loop $data $n $r} 
                                 {loop string2array($r['pictureurls']) $k $v} 
                                     <li>
-                                        <img src="{thumb($v[url],175,120)}"  alt="{$v[alt]}"/>
+                                        <img src="{$v[url]}" width="642" height="490"  alt="{$v[alt]}"/>
                                     </li>
                                 {/loop} 
                             {/loop} 
@@ -68,7 +68,7 @@
                             <a href="/index.php?m=content&c=index&a=lists&catid={$catid}&id={$r[id]}">
                                 <h3>{$r[title]}</h3>
                                 <div class="img-frame">
-                                    <img src="{thumb($pictureurls[0]['url'],175,120)}" alt="{$pictureurls[0]['alt']}" />
+                                    <img src="{$pictureurls[0]['url']}"  width="203" height="114" alt="{$pictureurls[0]['alt']}" />
                                 </div>
                             </a>
                         </li>

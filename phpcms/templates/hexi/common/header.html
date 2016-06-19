@@ -13,7 +13,7 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1 class="logo">和玺装饰</h1>
+        <h1 class="logo"><a href="/">和玺装饰</a></h1>
         <div class="contact fr">
             <div class="left">
                 <i class="i-phone"></i>

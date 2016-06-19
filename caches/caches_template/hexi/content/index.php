@@ -26,9 +26,17 @@
                     <a href="/index.php?m=content&c=index&a=lists&catid=15"><i class="i-link shimu"></i></a>
                 </h2>
                 <div class="imgframe mgt12">
-                    <a href="/index.php?m=content&c=index&a=lists&catid=15">
-                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo1.jpg" alt="" />
-                    </a>
+                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=d69d87496c8bea124cb2d6df04544e73&action=lists&catid=15&num=1&order=listorder+DESC&moreinfo=1&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 1;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'15','order'=>'listorder DESC','moreinfo'=>'1','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'15','order'=>'listorder DESC','moreinfo'=>'1','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>      
+                        <?php $n=1; if(is_array($data)) foreach($data AS $n => $r) { ?> 
+                            <?php $n=1; if(is_array(string2array($r['pictureurls']))) foreach(string2array($r['pictureurls']) AS $k => $v) { ?> 
+                                <a href="/index.php?m=content&c=index&a=lists&catid=15">
+                                    <img src="<?php echo $v['url'];?>" width="316" height="177"  alt="<?php echo $v['alt'];?>"/>
+                                </a>
+                                <?php break?>
+                            <?php $n++;}unset($n); ?> 
+                            <?php break?>
+                        <?php $n++;}unset($n); ?> 
+                    <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?> 
                 </div>
             </li>
             <li>
@@ -36,9 +44,17 @@
                     <a href="/index.php?m=content&c=index&a=lists&catid=16"><i class="i-link gongzhuang"></i></a>
                 </h2>
                 <div class="imgframe mgt12">
-                    <a href="/index.php?m=content&c=index&a=lists&catid=16">
-                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo1.jpg" alt="" />
-                    </a>
+                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=9c1c76ecaa69d4d06e65b08a97d58c71&action=lists&catid=16&num=1&order=listorder+DESC&moreinfo=1&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 1;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'16','order'=>'listorder DESC','moreinfo'=>'1','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'16','order'=>'listorder DESC','moreinfo'=>'1','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>      
+                        <?php $n=1; if(is_array($data)) foreach($data AS $n => $r) { ?> 
+                            <?php $n=1; if(is_array(string2array($r['pictureurls']))) foreach(string2array($r['pictureurls']) AS $k => $v) { ?> 
+                                <a href="/index.php?m=content&c=index&a=lists&catid=16">
+                                    <img src="<?php echo $v['url'];?>" width="316" height="177"  alt="<?php echo $v['alt'];?>"/>
+                                </a>
+                                <?php break?>
+                            <?php $n++;}unset($n); ?> 
+                            <?php break?>
+                        <?php $n++;}unset($n); ?> 
+                    <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?> 
                 </div>
             </li>
             <li>
@@ -46,9 +62,17 @@
                     <a href="/index.php?m=content&c=index&a=lists&catid=17"><i class="i-link siren"></i></a>
                 </h2>
                 <div class="imgframe mgt12">
-                    <a href="/index.php?m=content&c=index&a=lists&catid=17">
-                        <img src="<?php echo APP_PATH;?>statics/hexi/images/demo/demo1.jpg" alt="" />
-                    </a>
+                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=1735bd0eec3c32519331ed698d34f0c8&action=lists&catid=17&num=1&order=listorder+DESC&moreinfo=1&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 1;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'17','order'=>'listorder DESC','moreinfo'=>'1','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'17','order'=>'listorder DESC','moreinfo'=>'1','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>      
+                        <?php $n=1; if(is_array($data)) foreach($data AS $n => $r) { ?> 
+                            <?php $n=1; if(is_array(string2array($r['pictureurls']))) foreach(string2array($r['pictureurls']) AS $k => $v) { ?> 
+                                <a href="/index.php?m=content&c=index&a=lists&catid=17">
+                                    <img src="<?php echo $v['url'];?>" width="316" height="177"  alt="<?php echo $v['alt'];?>"/>
+                                </a>
+                                <?php break?>
+                            <?php $n++;}unset($n); ?> 
+                            <?php break?>
+                        <?php $n++;}unset($n); ?> 
+                    <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?> 
                 </div>
             </li>
         </ul>
@@ -77,14 +101,16 @@
 
 <script type="text/javascript">
     $(function(){
-        $('#banner').flexslider({
-            animation: "slide",     //动画效果
-            directionNav: false,    //显示方向箭头？false
-            slideshow: true,      //多张开启自动滚动
-            slideshowSpeed: 3000,
-            animationSpeed: 400
+            $('#banner').flexslider({
+                animation: "slide",     //动画效果
+                directionNav: true,    //显示方向箭头？false
+                slideshow: true,      //多张开启自动滚动
+                slideshowSpeed: 3000,
+                animationSpeed: 400,
+                prevText: '',
+                nextText: ''
+             });
         });
-    });
 </script>
 </body>
 </html>

@@ -233,6 +233,7 @@ a.main-c:hover{ color: #F7D679; }
 .container{ width: 1000px; margin-left: auto; margin-right: auto; }
 .header{ padding-top: 18px; padding-bottom: 15px; }
 .header .logo{ width: 140px; height: 86px; margin-left: auto; margin-right: auto; background: url(../images/logo.png) no-repeat center center; text-indent: -99999px; }
+.header .logo a{ display: block; height: 86px; }
 .header .contact{ margin-top: -48px; font-size: 0; width: 200px; }
 .header .contact .left{ width: 50px; }
 .header .contact .right{ width: 145px; margin-left: 55px; margin-top: 12px; }
@@ -256,6 +257,16 @@ a.main-c:hover{ color: #F7D679; }
 .banner .flex-control-nav{ bottom: 20px; }
 .banner .flex-control-paging li a{ background: transparent; border: 1px solid #fff; -webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; box-shadow: none; width: 8px; height: 8px; }
 .banner .flex-control-paging li a.flex-active{ background: #fff; }
+.banner .flex-direction-nav .flex-prev{ left: 25px; }
+.banner .flex-direction-nav .flex-next{ right: 25px; }
+.banner .flex-direction-nav a{ opacity: 0.5; filter: alpha(opacity=50); width: 70px; height: 70px; margin-top: -35px; }
+.banner .flex-prev,
+.banner .flex-next{ background: url(../images/cursors.png) no-repeat; }
+.banner .flex-prev{ background-position: 10px 0; }
+.banner .flex-next{ background-position: -110px 0; }
+.banner .flexslider:hover .flex-direction-nav .flex-prev{ left: 25px; }
+.banner .flexslider:hover .flex-direction-nav .flex-next{ right: 25px; }
+
 
 .colums>.left{ width: 358px; }
 .colums>.right{ width: 642px; margin-left: 358px; }
@@ -286,6 +297,7 @@ a.main-c:hover{ color: #F7D679; }
 
 .banner.recruit{ background: url(../images/zhaopin.jpg) no-repeat left top; }
 .banner.cus-list{ background: url(../images/minglu.jpg) no-repeat left top; }
+
 
 .cus-list{ font-size: 14px; }
 .cus-list ul{ margin-left: 8px; }
@@ -320,13 +332,15 @@ a.main-c:hover{ color: #F7D679; }
 
 .list-show{ margin-left: -26px; }
 .list-show li{ float: left;width: 316px; margin-left: 26px; }
-.imgframe{ width: 316px; height: 177px; overflow: hidden; }
-.imgframe img{ width: 100%; height: auto; }
+.imgframe{ width: 316px; height: 177px; overflow: hidden; background-color: #000; }
+.imgframe img{ width: 100%; height: auto; opacity: 0.5; filter: alpha(opacity=50); }
+.imgframe:hover img{ opacity: 1; filter: alpha(opacity=100); }
 .slogan *{line-height: 1em;}
 .slogan h3{ font-size: 18px; color: #000; margin-top: 55px; padding-bottom: 8px; border-bottom: 1px solid #4976b4; display: inline-block; padding-left: 3px; padding-right: 3px; }
 .slogan h2{ margin-top: 13px; margin-bottom: 15px; font-size: 32px; color: #0d499c; }
 .slogan p{ font-size: 12px; color: #0d499c; margin-bottom: 5px; }
 .slogan .more{ display: inline-block; width: 156px; height: 31px; line-height: 31px; border: 4px solid #0d499c; font-size: 16px; color: #171717; margin-bottom: 57px; }
+.slogan .more:hover{ background-color: #0d499c; color: #fff; }
 
 .footer{ border-top: 1px solid #3f3f3f; padding-top: 8px; color: #feffff; }
 .footer .bg{ height: 150px; padding-top: 25px; background: url(../images/footer.jpg) repeat-x; -webkit-background-size: auto 100%; background-size: auto 100%; }
