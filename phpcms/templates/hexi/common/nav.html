@@ -4,8 +4,7 @@
           {loop $data $r}
             <li>
                 {if $r['catid'] == 8 }
-                    <a href="javascript:void(0)">{$r[catname]}</a>
-
+                    <a href="/index.php?m=content&c=index&a=lists&catid=15">{$r[catname]}</a>
                 {else}
                     <a href="{$r[url]}">{$r[catname]}</a>
                 {/if}
