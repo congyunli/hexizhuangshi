@@ -13,7 +13,7 @@
             <?php }else{ ?>
 
                 {pc:content action="lists" catid="$catid" num="1" order="listorder DESC" moreinfo="1" page="$page"}      
-                    {loop $data $n $r} 
+                    {loop $data $n $r}
                         <h2>{$r['title']}</h2>
                     {/loop} 
                 {/pc} 
@@ -27,7 +27,10 @@
                     <?php if($_GET['id'] != ''){ $id = intval($_GET['id']); ?>
                         {pc:get sql="SELECT * FROM hx_picture as a left join hx_picture_data as b on a.id=b.id WHERE a.catid='$catid' and a.id='$id'"  return="data"}
                             {loop $data $n $r} 
-                                {loop string2array($r['pictureurls']) $k $v} 
+                                {loop string2array($r['pictureurls']) $k $v}
+                                    {if $k > 8}
+                                        {php break}
+                                    {/if}
                                     <li>
                                         <img src="{$v[url]}" width="642" height="490"  alt="{$v[alt]}"/>
                                     </li>
@@ -39,7 +42,10 @@
                     <?php }else{ ?>
                         {pc:content action="lists" catid="$catid" num="1" order="listorder DESC" moreinfo="1" page="$page"}      
                             {loop $data $n $r} 
-                                {loop string2array($r['pictureurls']) $k $v} 
+                                {loop string2array($r['pictureurls']) $k $v}
+                                    {if $k > 8}
+                                        {php break}
+                                    {/if}
                                     <li>
                                         <img src="{$v[url]}" width="642" height="490"  alt="{$v[alt]}"/>
                                     </li>
@@ -68,7 +74,8 @@
                             <a href="/index.php?m=content&c=index&a=lists&catid={$catid}&id={$r[id]}">
                                 <h3>{$r[title]}</h3>
                                 <div class="img-frame">
-                                    <img src="{$pictureurls[0]['url']}"  width="203" height="114" alt="{$pictureurls[0]['alt']}" />
+                                    <img src="{$r['thumb']}"  width="203" height="114" alt="{$r['title']}" />
+                                    <!--<img src="{$pictureurls[0]['url']}"  width="203" height="114" alt="{$pictureurls[0]['alt']}" />-->
                                 </div>
                             </a>
                         </li>
