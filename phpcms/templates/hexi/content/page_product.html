@@ -4,7 +4,7 @@
         <div class="left">
             <div class="inner-ctner">
                 {pc:slider action="lists" postion="58" siteid="$siteid" order="desc" num="9"}
-                    {loop $data $r}
+                    {loop $data $k $r}
                         <h2>{$r[name]}</h2>
                         {php break}
                     {/loop}
@@ -15,7 +15,10 @@
             <div id="banner" class="flexslider">
                 <ul class="slides">
                     {pc:slider action="lists" postion="58" siteid="$siteid" order="desc" num="9"}
-                        {loop $data $r}
+                        {loop $data $k $r}
+                            {if $k > 8}
+                            {php break}
+                            {/if}
                             <li>
                                 <a href="{$r[url]}">
                                     <img src="{$r[image]}" width="642" height="490"  alt="{$r[name]}"/>

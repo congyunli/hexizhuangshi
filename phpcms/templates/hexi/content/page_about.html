@@ -16,6 +16,9 @@
                 <ul class="slides">
                     {pc:slider action="lists" postion="57" siteid="$siteid" order="desc" num="9"}
                         {loop $data $r}
+                            {if $k > 8}
+                                {php break}
+                            {/if}
                             <li>
                                 <a href="{$r[url]}">
                                     <img src="{$r[image]}" width="642" height="490"  alt="{$r[name]}"/>
