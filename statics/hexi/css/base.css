@@ -297,8 +297,9 @@ a.main-c:hover{ color: #F7D679; }
 .banner.case .flex-control-paging li a.flex-active{ border-color: #fff; background: transparent; }
 
 .banner.recruit{ background: url(../images/zhaopin.jpg) no-repeat left top; }
-.banner.cus-list{ background: url(../images/minglu.jpg) no-repeat left top; }
-
+.banner.contactus{ background: url(../images/banner_contact.jpg) no-repeat left top; }
+.banner.customer{ background: url(../images/banner_customer.jpg) no-repeat left top; }
+.banner.project{ background: url(../images/banner_newproject.jpg) no-repeat left top; }
 
 .cus-list{ font-size: 14px; }
 .cus-list ul{ margin-left: 8px; }
